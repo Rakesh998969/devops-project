@@ -26,7 +26,7 @@ jobs:
         with:
           image-ref: 'devops-backend:1.0'
           format: 'table'
-          exit-code: '0'
+          exit-code: '1'
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
 
@@ -35,7 +35,7 @@ jobs:
         with:
           image-ref: 'devops-frontend:1.1'
           format: 'table'
-          exit-code: '0'
+          exit-code: '1'
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
 
