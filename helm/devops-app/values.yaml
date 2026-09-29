@@ -1,0 +1,14 @@
+backend:
+  replicas: 1
+  image: devops-backend
+  tag: "1.0"
+
+frontend:
+  replicas: 1
+  image: devops-frontend
+  tag: "1.1"
+
+mysql:
+  rootPassword: rootpassword
+  password: apppassword
+  storage: 2Gi
