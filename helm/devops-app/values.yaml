@@ -1,14 +1,13 @@
 backend:
   replicas: 1
-  image: devops-backend
+  image: rakesh5293/devops-backend
   tag: "1.0"
 
 frontend:
   replicas: 1
-  image: devops-frontend
+  image: rakesh5293/devops-frontend
   tag: "2.3"
 
 mysql:
-  rootPassword: rootpassword
-  password: apppassword
+  existingSecret: mysql-secret
   storage: 2Gi
