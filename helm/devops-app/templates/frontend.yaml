@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: frontend
   namespace: {{ .Release.Namespace }}
+  annotations:
+    gitops-demo: "true"
 spec:
   replicas: {{ .Values.frontend.replicas }}
   selector:
