@@ -5,3 +5,4 @@ __pycache__/
 .env.*
 rendered.yaml
 *.log
+k8s/mysql-secret.yaml
